@@ -3,186 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josué Parfums Décant | Catálogo</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- AQUÍ ESTÁ TODO EL CSS --- */
-        :root {
-            --azul-profundo: #001d3d;
-            --azul-electrico: #003566;
-            --dorado: #ffc300;
-            --blanco-cristal: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: radial-gradient(circle, #003566 0%, #000814 100%);
-            color: white;
-            min-height: 100vh;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .logo {
-            max-width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 0 25px rgba(0, 180, 216, 0.4);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            letter-spacing: 3px;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        .catalog {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: var(--blanco-cristal);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-12px);
-            border-color: var(--dorado);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
-        }
-
-        .perfume-img {
-            width: 100%;
-            height: 250px;
-            object-fit: contain;
-            margin-bottom: 25px;
-            filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
-        }
-
-        .prices {
-            display: flex;
-            justify-content: space-around;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .price-tag {
-            font-weight: 700;
-            color: var(--dorado);
-            font-size: 1.1rem;
-        }
-
-        .btn-buy {
-            display: block;
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            padding: 15px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-buy:hover {
-            transform: scale(1.05);
-            filter: brightness(1.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .insta-link {
-            display: inline-block;
-            color: var(--dorado);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.2rem;
-            border: 2px solid var(--dorado);
-            padding: 12px 25px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .insta-link:hover {
-            background: var(--dorado);
-            color: #000;
-        }
-    </style>
+    <title>Josué Parfums Décant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <img src="logo.jpeg".jpg" alt="Josué Parfums" class="logo">
-        <h1>Fragancias Exclusivas</h1>
+        <img src="47359.jpg" alt="Josué Parfums" class="logo-principal">
+        <h1>Josué Parfums</h1>
     </header>
 
     <main class="catalog">
-        
         <div class="card">
-            <img src="midday.jpeg".jpg" alt="Midday Swim" class="perfume-img">
+            <img src="47360.jpg" class="perfume-img">
             <h2>Midday Swim</h2>
-            <p>🍊 Naranja, Mandarina, Bergamota, Toque Marino</p>
+            <p class="notes">🍊 Naranja, Mandarina y Bergamota</p>
             <div class="prices">
                 <span class="price-tag">5ml: $5</span>
                 <span class="price-tag">10ml: $9</span>
             </div>
-            <a href="https://wa.me/50766666440?text=Hola!%20Me%20interesa%20un%20decant%20de%20Midday%20Swim" target="_blank" class="btn-buy">Pedir por WhatsApp</a>
+            <a href="https://wa.me/50766666440?text=Hola!%20Quiero%20Midday%20Swim" class="btn-buy">WhatsApp</a>
         </div>
 
         <div class="card">
-            <img src="shinning.jpeg".jpg" alt="Shinning City" class="perfume-img">
+            <img src="47361.jpg" class="perfume-img">
             <h2>Shinning City</h2>
-            <p>🌸 Flores suaves, Almizcle, Toques dulces</p>
+            <p class="notes">🌸 Flores suaves y Almizcle</p>
             <div class="prices">
                 <span class="price-tag">5ml: $5</span>
                 <span class="price-tag">10ml: $9</span>
             </div>
-            <a href="https://wa.me/50766666440?text=Hola!%20Me%20interesa%20un%20decant%20de%20Shinning%20City" target="_blank" class="btn-buy">Pedir por WhatsApp</a>
+            <a href="https://wa.me/50766666440?text=Hola!%20Quiero%20Shinning%20City" class="btn-buy">WhatsApp</a>
         </div>
 
         <div class="card">
-            <img src="genius.jpeg".jpg" alt="So Genius" class="perfume-img">
+            <img src="47362.jpg" class="perfume-img">
             <h2>So Genius</h2>
-            <p>🍬 Notas dulces, Vainilla, Ámbar</p>
+            <p class="notes">🍬 Notas dulces, Vainilla y Ámbar</p>
             <div class="prices">
                 <span class="price-tag">5ml: $5</span>
                 <span class="price-tag">10ml: $9</span>
             </div>
-            <a href="https://wa.me/50766666440?text=Hola!%20Me%20interesa%20un%20decant%20de%20So%20Genius" target="_blank" class="btn-buy">Pedir por WhatsApp</a>
+            <a href="https://wa.me/50766666440?text=Hola!%20Quiero%20So%20Genius" class="btn-buy">WhatsApp</a>
         </div>
 
+        <div class="card">
+            <img src="48787.jpg" class="perfume-img">
+            <h2>Deep Chill</h2>
+            <p class="notes">🍃 Bergamota y Té Verde</p>
+            <div class="prices">
+                <span class="price-tag">5ml: $5</span>
+                <span class="price-tag">10ml: $8</span>
+            </div>
+            <a href="https://wa.me/50766666440?text=Hola!%20Quiero%20Deep%20Chill" class="btn-buy">WhatsApp</a>
+        </div>
     </main>
 
     <footer>
-        <a href="https://www.instagram.com/josueparfums?igsh=MTV4b3dwenJmNmR4Mg==" target="_blank" class="insta-link">
-            📸 Instagram: @josueparfums
-        </a>
-        <p style="margin-top: 30px; opacity: 0.5;">&copy; 2026 Josué Parfums Décant. Panamá.</p>
-        <a href="https://www.tiktok.com/@josueparfums?_r=1&_t=ZS-95PNRgwsPFS" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/josueparfums" class="social" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@josueparfums" class="social" target="_blank">TikTok</a>
+        <p style="margin-top: 20px; opacity: 0.3;">&copy; 2026 Josué Parfums Décant</p>
     </footer>
 
 </body>
